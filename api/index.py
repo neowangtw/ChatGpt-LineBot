@@ -47,7 +47,7 @@ def handle_message(event):
             TextSendMessage(text="我是時下流行的AI智能，目前可以為您服務囉，歡迎來跟我互動~"))
         return
 
-    if event.message.text == "安靜":
+    if event.message.text == "去休息":
         working_status = False
         line_bot_api.reply_message(
             event.reply_token,
